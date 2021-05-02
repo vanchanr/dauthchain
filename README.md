@@ -1,7 +1,7 @@
 # dauthchain
 
 - The proposed DistributedAuthorizationChain sytem was implemented using an ABAC scheme (Attribute/Policy Based Access Control) on EOSIO blockchain.
-- Policies are used to define the rules to ALLOW/DENY permission based on the attributes of the requested cloud resource and requesting resource user. Each policy is represented as a JSON String in following format:
+- Policies are used to define the rules to ALLOW/DENY permission based on the attributes of the requested cloud resource and requesting resource user. Following is a simple policy represented in JSON format:
 ```javascript
   {
     "Resource" : {
