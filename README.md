@@ -1,7 +1,7 @@
 # dauthchain
 
-- The proposed DistributedAuthorizationChain sytem was implemented using an ABAC scheme (Attribute/Policy Based Access Control) on EOSIO blockchain.
-- Policies are used to define the rules to ALLOW/DENY permission based on the attributes of the requested cloud resource and requesting resource user. Following is a simple policy represented in JSON format:
+- The proposed DistributedAuthorizationChain system was implemented using an ABAC scheme (Attribute/Policy Based Access Control) on EOSIO blockchain.
+- Policies are used to define the rules which ALLOW/DENY permission based on the attributes of the requested cloud resource and requesting resource user. Following is a simple policy represented in JSON format:
 ```javascript
   {
     "Resource" : {
@@ -19,7 +19,7 @@
 - The smart contract developed using the EOSIO-CDT [1] exposes the following actions:
   - actions to perform CRUD operations on the access control policies which are stored directly on the blockchain itself
   - checkPermission() action which takes as input the parsed "accessRequest" from Resource Server and returns an ALLOW/DENY based on the algorithm defined in `src/dauthchain.cpp`
-- We use CPU and RAM, the most important system resources in EOSIO blockchain to evaluate the performance of our system :
+- We use CPU and RAM [2], the most important system resources in EOSIO blockchain to evaluate the performance of our system :
   - CPU represents the processing time taken to execute a transaction
   - RAM represents the storage required for data that needs to be persisted permanently on blockchain (policies in our case)
 - The system was tested using the EOSJS library [3], to push various transactions to the blockchain. Following are the conclusions:
