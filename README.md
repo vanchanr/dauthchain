@@ -23,10 +23,9 @@
   - CPU represents the processing time taken to execute a transaction
   - RAM represents the storage required for data that needs to be persisted permanently on blockchain (policies in our case)
 - The system was tested using the EOSJS library [3], to push various transactions to the blockchain. Following are the conclusions:
-  - interpret the graphs captured from `test/dauthchain-test.js`
-    - fig1: number of transactions vs execution times of CREATE, READ, UPDATE, DELETE policy actions
-    - fig2: number of transactions vs execution times on BLOCKONE, PROTON, LOCAL testnets (for checkPermission action)
-    - fig3: number of transactions vs RAM used on BLOCKONE, PROTON, LOCAL testnets (for CREATE policy action)
+  - fig1 shows that DELETE policy action consumes the most CPU time followed by UPDATE, CREATE and READ actions respectively. Also, the trend shows average execution time per transaction doesn't change much on increasing the number of  concurrent transactions.
+  - fig2: number of transactions vs execution times on BLOCKONE, PROTON, LOCAL testnets (for checkPermission action)
+  - fig3: number of transactions vs RAM used on BLOCKONE, PROTON, LOCAL testnets (for CREATE policy action)
 
 ### references:
 1. https://eosio.github.io/eosio.cdt/
