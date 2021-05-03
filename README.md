@@ -25,7 +25,7 @@
 - The system was tested using the EOSJS library [3], to push various transactions to the blockchain. Following are the conclusions:
   - fig1 shows that DELETE policy action consumes the most CPU time followed by UPDATE, CREATE and READ actions respectively. Also, the trend shows average execution time per transaction doesn't change much on increasing the number of  concurrent transactions.
   - fig2 represents the average end to end latency from the point when a createPolicy() transaction is submitted to the blockchain till a transaction execution response is received. It shows the latency of proton testnet is slightly more than local and block.one testnets
-  - fig3: number of transactions vs RAM used on BLOCKONE, PROTON, LOCAL testnets (for CREATE policy action)
+  - from fig3, it is observed that the amount of RAM used to store data on blockchain is independent of the testnet and is defined by the EOS protocol. Also, RAM usage increases proportionately with the number of policies
 
 ### references:
 1. https://eosio.github.io/eosio.cdt/
