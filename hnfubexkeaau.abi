@@ -1,0 +1,117 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "checkaccess",
+            "base": "",
+            "fields": [
+                {
+                    "name": "accessRequestJson",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "createpolicy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "policyId",
+                    "type": "uint64"
+                },
+                {
+                    "name": "policyJson",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "deletepolicy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "policyId",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "policies",
+            "base": "",
+            "fields": [
+                {
+                    "name": "policyId",
+                    "type": "uint64"
+                },
+                {
+                    "name": "policyJson",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "readpolicy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "policyId",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "updatepolicy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "policyId",
+                    "type": "uint64"
+                },
+                {
+                    "name": "policyJson",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "checkaccess",
+            "type": "checkaccess",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createpolicy",
+            "type": "createpolicy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deletepolicy",
+            "type": "deletepolicy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "readpolicy",
+            "type": "readpolicy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatepolicy",
+            "type": "updatepolicy",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "policies",
+            "type": "policies",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
