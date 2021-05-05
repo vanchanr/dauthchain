@@ -4,7 +4,7 @@ const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');
 const { performance } = require('perf_hooks');
 const fs = require('fs')
 const fetch = require('node-fetch');
-const plotly = require('plotly')("vanchanr", "g0IdVQZMEs5Bz6O3Tr1y");
+const plotly = require('plotly')("USERNAME", "APIKEY");
 
 const testnets = ['blockone', 'proton', 'local']
 
